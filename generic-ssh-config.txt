@@ -1,0 +1,7 @@
+Host <how you want to call the remote server>
+Hostname <the ip address of the remote server>
+Port <the allowed ssh port of the remote server>
+User <user of the remote server>
+PubKeyAuthentication yes
+IdentityFile <path to local RSA file>
+ForwardX11 yes

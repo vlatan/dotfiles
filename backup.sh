@@ -16,7 +16,7 @@ sleep 1
 echo "Configurations directory cleared."
 sleep 1
 
-echo -"Starting backup..."
+echo "Starting backup..."
 sleep 1
 
 # looping through the list & avoiding the empty spaces

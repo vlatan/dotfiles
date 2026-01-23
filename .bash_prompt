@@ -1,0 +1,32 @@
+# Using tput for colors and formatting. Reset colors.
+tput sgr0
+
+# Set color variables
+bold="\[$(tput bold)\]"
+reset="\[$(tput sgr0)\]"
+blue="\[$(tput setaf 153)\]"
+steel_blue="\[$(tput setaf 67)\]"
+green="\[$(tput setaf 71)\]"
+orange="\[$(tput setaf 166)\]"
+red="\[$(tput setaf 167)\]"
+white="\[$(tput setaf 15)\]"
+yellow="\[$(tput setaf 228)\]"
+
+# Highlight the user name when logged in as root.
+[[ "${USER}" == "root" ]] && userColor="${red}" || userColor="${green}"
+
+# Highlight the hostname when connected via SSH.
+[[ "${SSH_TTY}" ]] && hostColor="${red}" || hostColor="${orange}"
+
+# Set the default interaction prompt 
+PS1="${bold}"                                                   # bold
+PS1+="${white}[${yellow}\A${white}]"                            # [time]
+PS1+="[${userColor}\u${white}@${hostColor}\h${white}]"          # [user@host]
+PS1+="[${steel_blue}\w${white}]"                                # [pwd]
+PS1+="${orange}$(__git_ps1)"                                    # [current git branch]
+PS1+="${white}\n$ ${reset}"                                     # new line, $ sign and reset
+export PS1
+
+# Set the continuation interactive prompt
+PS2="${yellow}→ ${reset}"
+export PS2

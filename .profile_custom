@@ -1,0 +1,15 @@
+# set scale factor for apps with small fonts
+export QT_SCALE_FACTOR=1.25
+
+# set PATH so it includes golang instalation if it exists
+if [ -d "/usr/local/go/bin" ] ; then
+    PATH="$PATH:/usr/local/go/bin"
+fi
+
+# Golang binary install path
+if [ -d "$HOME/go/bin" ] ; then
+    PATH="$PATH:$HOME/go/bin"
+fi
+
+# default 755 and 644 permissions when creating dirs and files
+umask 022

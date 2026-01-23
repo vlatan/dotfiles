@@ -6,7 +6,7 @@ if [ -d "/usr/local/go/bin" ] ; then
     PATH="$PATH:/usr/local/go/bin"
 fi
 
-# Golang binary install path
+# If golang installed in the home folder include that path too
 if [ -d "$HOME/go/bin" ] ; then
     PATH="$PATH:$HOME/go/bin"
 fi

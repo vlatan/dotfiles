@@ -14,7 +14,13 @@ alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 alias weather='curl wttr.in'
 
 # docker compose build and run the containers in background
-alias build='docker compose up --pull=always --build --detach'
+alias dcup='docker compose up --detach --remove-orphans'
 
 # remove docker dangling images, bring down the running containers and remove orphan containers
-alias down='docker compose down --remove-orphans && docker system prune --force'
+alias dcdown='docker compose down --remove-orphans && docker system prune --force'
+
+# see the containers
+alias dcps="docker compose ps"
+
+# see the stats
+alias dcstats="docker compose stats"

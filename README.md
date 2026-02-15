@@ -4,7 +4,7 @@ Personal configuration files for bash and profile settings.
 
 ## Setup
 
-### 1. Bash customizations
+### Bash customizations
 
 Add this line at the **end** of your `~/.bashrc` file:
 ```bash
@@ -14,7 +14,7 @@ if [ -f ~/repos/dotfiles/.bash_custom ]; then
 fi
 ```
 
-### 2. Profile customizations
+### Profile customizations
 
 Add this line at the **end** of your `~/.profile` file:
 ```bash
@@ -24,11 +24,12 @@ if [ -f ~/repos/dotfiles/.profile_custom ]; then
 fi
 ```
 
-### 3. Apply changes
+### Apply changes
 
 After editing, either:
 - Log out and log back in (for profile changes)
 - Or run `source ~/.bashrc` (for bash changes in current terminal)
+
 
 ## Files
 
@@ -37,3 +38,12 @@ After editing, either:
 - `.bash_functions` - Shell functions
 - `.bash_custom` - Custom bash settings
 - `.profile_custom` - Custom profile settings (PATH, environment variables, umask)
+
+
+## Install fuzzy find (optionally)
+
+Install [fzf](https://github.com/junegunn/fzf?tab=readme-ov-file#using-git).
+``` bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```

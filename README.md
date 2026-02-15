@@ -6,23 +6,8 @@ Personal configuration files for bash and profile settings.
 
 ### 1. Bash customizations
 
-Add these lines at the **end** of your `~/.bashrc` file:
+Add this line at the **end** of your `~/.bashrc` file:
 ```bash
-# Custom aliases
-if [ -f ~/repos/dotfiles/.bash_aliases ]; then
-    . ~/repos/dotfiles/.bash_aliases
-fi
-
-# Custom prompt
-if [ -f ~/repos/dotfiles/.bash_prompt ]; then
-    . ~/repos/dotfiles/.bash_prompt
-fi
-
-# Custom functions
-if [ -f ~/repos/dotfiles/.bash_functions ]; then
-    . ~/repos/dotfiles/.bash_functions
-fi
-
 # Custom bash settings
 if [ -f ~/repos/dotfiles/.bash_custom ]; then
     . ~/repos/dotfiles/.bash_custom

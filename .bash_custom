@@ -1,3 +1,19 @@
 # increase bash history
 export HISTSIZE=10000000
 export HISTFILESIZE=10000000
+
+
+# Custom aliases
+if [ -f ~/repos/dotfiles/.bash_aliases ]; then
+    . ~/repos/dotfiles/.bash_aliases
+fi
+
+# Custom prompt
+if [ -f ~/repos/dotfiles/.bash_prompt ]; then
+    . ~/repos/dotfiles/.bash_prompt
+fi
+
+# Custom functions
+if [ -f ~/repos/dotfiles/.bash_functions ]; then
+    . ~/repos/dotfiles/.bash_functions
+fi

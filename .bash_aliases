@@ -4,9 +4,6 @@ alias ll='ls -lah'
 # git status
 alias gs='git status'
 
-# update the repos and upgrade
-alias sysupdate='sudo apt update && sudo apt upgrade && sudo snap refresh && sudo apt autoremove && sudo apt autoclean'
-
 # perform speed test
 alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
 

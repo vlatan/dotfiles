@@ -11,8 +11,8 @@ Note where this repo leaves on your machine and replace the `/path/to/dotfiles` 
 Add this at the **end** of your `~/.bashrc` file.
 ```bash
 # Custom bash settings
-if [ -f ~/path/to/dotfiles/.init.bash ]; then
-    . ~/path/to/dotfiles/.init.bash
+if [ -f /path/to/dotfiles/.init.bash ]; then
+    . /path/to/dotfiles/.init.bash
 fi
 ```
 
@@ -21,8 +21,8 @@ fi
 Add this at the **end** of your `~/.profile` file:
 ```bash
 # Custom profile settings
-if [ -f ~/path/to/dotfiles/.init.profile ]; then
-    . ~/path/to/dotfiles/.init.profile
+if [ -f /path/to/dotfiles/.init.profile ]; then
+    . /path/to/dotfiles/.init.profile
 fi
 ```
 

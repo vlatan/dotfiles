@@ -4,23 +4,25 @@ Personal configuration files for bash and profile settings.
 
 ## Setup
 
+Note where this repo leaves on your machine and replace the `/path/to/dotfiles` accordingly.
+
 ### Bash customizations
 
-Add this line at the **end** of your `~/.bashrc` file:
+Add this at the **end** of your `~/.bashrc` file.
 ```bash
 # Custom bash settings
-if [ -f ~/repos/dotfiles/.init.bash ]; then
-    . ~/repos/dotfiles/.init.bash
+if [ -f ~/path/to/dotfiles/.init.bash ]; then
+    . ~/path/to/dotfiles/.init.bash
 fi
 ```
 
 ### Profile customizations
 
-Add this line at the **end** of your `~/.profile` file:
+Add this at the **end** of your `~/.profile` file:
 ```bash
 # Custom profile settings
-if [ -f ~/repos/dotfiles/.init.profile ]; then
-    . ~/repos/dotfiles/.init.profile
+if [ -f ~/path/to/dotfiles/.init.profile ]; then
+    . ~/path/to/dotfiles/.init.profile
 fi
 ```
 

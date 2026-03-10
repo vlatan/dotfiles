@@ -9,8 +9,8 @@ Personal configuration files for bash and profile settings.
 Add this line at the **end** of your `~/.bashrc` file:
 ```bash
 # Custom bash settings
-if [ -f ~/repos/dotfiles/.bash_custom ]; then
-    . ~/repos/dotfiles/.bash_custom
+if [ -f ~/repos/dotfiles/.init.bash ]; then
+    . ~/repos/dotfiles/.init.bash
 fi
 ```
 
@@ -19,8 +19,8 @@ fi
 Add this line at the **end** of your `~/.profile` file:
 ```bash
 # Custom profile settings
-if [ -f ~/repos/dotfiles/.profile_custom ]; then
-    . ~/repos/dotfiles/.profile_custom
+if [ -f ~/repos/dotfiles/.init.profile ]; then
+    . ~/repos/dotfiles/.init.profile
 fi
 ```
 
@@ -33,11 +33,11 @@ After editing, either:
 
 ## Files
 
-- `.bash_aliases` - Command aliases
-- `.bash_prompt` - Custom shell prompt
-- `.bash_functions` - Shell functions
-- `.bash_custom` - Custom bash settings
-- `.profile_custom` - Custom profile settings (PATH, environment variables, umask)
+- `.aliases` - Command aliases
+- `.prompt` - Custom shell prompt
+- `.functions` - Shell functions
+- `.init.bash` - Unify custom bash settings
+- `.init.profile` - Custom profile settings (PATH, environment variables, umask)
 
 
 ## Install fuzzy find (optionally)

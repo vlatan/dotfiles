@@ -4,9 +4,6 @@ alias ll='ls -lah'
 # git status
 alias gs='git status'
 
-# perform speed test
-alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -'
-
 # get weather forcast
 alias weather='curl wttr.in'
 

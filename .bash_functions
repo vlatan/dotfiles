@@ -1,7 +1,7 @@
 
 # get cheat sheet for a command
 cht() {
-    curl cht.sh/$1
+  curl cht.sh/$1
 }
 
 # update the repos and upgrade

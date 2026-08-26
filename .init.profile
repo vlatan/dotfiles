@@ -11,9 +11,10 @@ if [ -d "/usr/local/go/bin" ] ; then
     PATH="$PATH:/usr/local/go/bin"
 fi
 
-# If golang installed in the home folder include that path too
+# Add $HOME/go/bin (the default Go bin path) to your PATH environment variable 
+# to use tools installed via go install
 if [ -d "$HOME/go/bin" ] ; then
-    PATH="$PATH:$HOME/go/bin"
+    PATH="$PATH:$(go env GOPATH)/bin"
 fi
 
 # default 755 and 644 permissions when creating dirs and files
